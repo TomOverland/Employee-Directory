@@ -1,12 +1,11 @@
-import React from 'react';
-import "../styles/Wrapper.css";
+import React, { Component } from 'react';
+import DataArea from "./DataArea";
+import "../styles/Main.css";
 
-function Wrapper({ children }) {
-    return (
-        <div className="wrapper">
-            { children }
-        </div>
-    );
+export default class Main extends Component {
+    render() {
+        return (
+            <DataArea />
+        )
+    }
 }
-
-export default Wrapper;
