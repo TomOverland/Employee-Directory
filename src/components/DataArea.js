@@ -99,3 +99,5 @@ class DataArea extends React.Component {
     );
   }
 }
+
+export default DataArea;
