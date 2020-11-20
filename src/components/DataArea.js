@@ -65,7 +65,7 @@ class DataArea extends React.Component {
     this.setState({ filteredUsers: sortedUsers });
   };
 
-  handledSearchChange = (event) => {
+  handleSearchChange = (event) => {
     console.log(event.target.value);
     const filter = event.target.value;
     const filteredList = this.state.users.filter((item) => {
