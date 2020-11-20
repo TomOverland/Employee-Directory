@@ -3,7 +3,7 @@ import "../styles/DataBody.css";
 
 function DataBody({ users }) {
   function formatDate(date) {
-    const dataArray = date.split("-");
+    const dateArray = date.split("-");
     const year = dateArray[0];
     const month = dataArray[1];
     const dayArray = dateArray[2].split("T");
@@ -32,7 +32,7 @@ function DataBody({ users }) {
                 {phone}
               </td>
               <td data-th="Email" className="align-middle">
-                <a href={"mailto:" + email} target="_blank">
+                <a href={"mailto:" + email} target="__blank">
                   {email}
                 </a>
               </td>
