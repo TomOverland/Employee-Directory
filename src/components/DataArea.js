@@ -76,7 +76,7 @@ class DataArea extends React.Component {
   };
 
   componentDidMount() {
-    API.getEmployees.then((results) => {
+    API.getUsers().then((results) => {
       this.setState({
         users: results.data.results,
         filteredUsers: results.data.results,
