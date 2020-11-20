@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import DataTable from "./DataTable";
 import Nav from "./Nav";
 import API from "../utils/API";
 import "../styles/DataArea.css";
 
-class DataArea extends React.Component {
+export default class DataArea extends Component {
   state = {
     users: [{}],
     order: "descend",
@@ -20,7 +20,6 @@ class DataArea extends React.Component {
   ];
 
   handleSort = (heading) => {
-    // This conditional statement will change the list sorting based on what the state is currently
     if (this.state.order === "descend") {
       this.setState({
         order: "ascend",
@@ -60,7 +59,6 @@ class DataArea extends React.Component {
         }
       }
     };
-
     const sortedUsers = this.state.filteredUsers.sort(compareFnc);
     this.setState({ filteredUsers: sortedUsers });
   };
@@ -69,6 +67,7 @@ class DataArea extends React.Component {
     console.log(event.target.value);
     const filter = event.target.value;
     const filteredList = this.state.users.filter((item) => {
+      // merge data together, then see if user input is anywhere inside
       let values = Object.values(item).join("").toLowerCase();
       return values.indexOf(filter.toLowerCase()) !== -1;
     });
@@ -86,8 +85,8 @@ class DataArea extends React.Component {
 
   render() {
     return (
-      <div>
-        <Nav handleSearchChange={this.handleSortChange} />
+      <>
+        <Nav handleSearchChange={this.handleSearchChange} />
         <div className="data-area">
           <DataTable
             headings={this.headings}
@@ -95,9 +94,7 @@ class DataArea extends React.Component {
             handleSort={this.handleSort}
           />
         </div>
-      </div>
+      </>
     );
   }
 }
-
-export default DataArea;
