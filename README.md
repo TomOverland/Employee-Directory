@@ -1,6 +1,8 @@
 # Employee-Directory
 Employee Directory created with React.
 
+live website: https://tomoverland.github.io/Employee-Directory/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
