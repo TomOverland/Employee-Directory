@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Employees from "./Employees.js";
 import Search from "./Search.js";
+import API from "../utils/API";
 // import "../styles/Directory.css";
 
 class Directory extends Component {
@@ -14,13 +15,11 @@ class Directory extends Component {
   // check that the component rendered at least once, and pull in our data
   // wait for the information to come back
   componentDidMount = () => {
-    fetch(
-      `https://randomuser.me/api/?results=25&nat=us&inc=name,email,phone,id,picture,dob`
-    )
-      .then((res) => res.json())
-      .then((json) => {
-        this.setState({ employees: json.results });
+    API.getUsers().then((results) => {
+      this.setState({
+        employees: results.data.results,
       });
+    });
   };
 
   // sort through employees based on search term
@@ -50,11 +49,6 @@ class Directory extends Component {
       <div>
         <div className="jumbotron">
           <h2 className="display-4">Employee Directory</h2>
-          <p>
-            Hey team! At Barbara's request in the last all employee meeting,
-            I've set up an easy way to quickly find information about our
-            officemates.
-          </p>
           <p>
             {" "}
             Search below by name or email to pull up who you are looking for.
