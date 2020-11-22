@@ -54,7 +54,7 @@ class Directory extends Component {
         </div>
 
         <div className="container-fluid">
-          <table className="table">
+          <table className="table table-dark table-striped table-hover table-bordered table-condensed">
             <thead className="thead">
               <tr>
                 <th>Image</th>
