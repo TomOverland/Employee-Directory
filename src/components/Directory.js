@@ -49,11 +49,7 @@ class Directory extends Component {
       <div>
         <div className="jumbotron">
           <h2 className="display-4">Employee Directory</h2>
-          <p>
-            {" "}
-            Search below by name or email to pull up who you are looking for.
-            Any questions or issues, feel free to reach out!
-          </p>
+          <p> Search for an employee by entering their name or email below.</p>
           <Search name="search" startSort={this.startSort} label="Search" />
         </div>
 
@@ -61,11 +57,12 @@ class Directory extends Component {
           <table className="table">
             <thead className="thead">
               <tr>
-                <th>Headshot </th>
+                <th>Image</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
-                <th>Birthdate </th>
+                <th>Date of Birth</th>
+                <th>Address</th>
               </tr>
             </thead>
             <tbody>
@@ -80,6 +77,17 @@ class Directory extends Component {
                       email={employee.email}
                       icon={employee.picture.medium}
                       dob={employee.dob.date}
+                      address={
+                        employee.location.street.number +
+                        " " +
+                        employee.location.street.name +
+                        ", " +
+                        employee.location.city +
+                        ", " +
+                        employee.location.state +
+                        " " +
+                        employee.location.postcode
+                      }
                     />
                   ))
                 : // otherwise map the sorted employees
@@ -92,6 +100,10 @@ class Directory extends Component {
                       email={employee.email}
                       icon={employee.picture.medium}
                       dob={employee.dob.date}
+                      address={
+                        employee.location.street.number +
+                        employee.location.street.name
+                      }
                     />
                   ))}
               ;

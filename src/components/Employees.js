@@ -2,7 +2,8 @@ import React from "react";
 // import "../styles/Employees.css";
 
 const Employees = (props) => {
-  //formatDate sets up dates as ??-??-???? in Month-Day-Year format.
+  // The API response of dates looks like: 1972-08-30T05:36:46.599Z
+  // That's difficult to read, so formatDate sets up dates as ??-??-???? in Month-Day-Year format.
   function formatDate(date) {
     const dateArray = date.split("-");
     const year = dateArray[0];
@@ -27,6 +28,7 @@ const Employees = (props) => {
       <td>{props.email}</td>
       <td>{props.phone} </td>
       <td>{dateOfBirth}</td>
+      <td>{props.address}</td>
     </tr>
   );
 };
