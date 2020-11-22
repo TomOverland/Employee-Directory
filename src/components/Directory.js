@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Employees from "./Employees.js";
 import Search from "./Search.js";
 import API from "../utils/API";
-// import "../styles/Directory.css";
+import "../styles/Directory.css";
 
 class Directory extends Component {
   state = {
@@ -46,8 +46,8 @@ class Directory extends Component {
 
   render = () => {
     return (
-      <div>
-        <div className="jumbotron">
+      <div className="background">
+        <div className="jumbotron jumbotron-fluid">
           <h2 className="display-4">Employee Directory</h2>
           <p> Search for an employee by entering their name or email below.</p>
           <Search name="search" startSort={this.startSort} label="Search" />
@@ -108,7 +108,6 @@ class Directory extends Component {
                       />
                     ))
               }
-              ;
             </tbody>
           </table>
         </div>
