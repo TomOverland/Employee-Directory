@@ -1,5 +1,4 @@
 import React from "react";
-// import "../styles/Employees.css";
 
 const Employees = (props) => {
   // The API response of dates looks like: 1972-08-30T05:36:46.599Z
