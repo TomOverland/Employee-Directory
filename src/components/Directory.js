@@ -53,7 +53,7 @@ class Directory extends Component {
           <Search name="search" startSort={this.startSort} label="Search" />
         </div>
 
-        <div className="container">
+        <div className="container-fluid">
           <table className="table">
             <thead className="thead">
               <tr>
@@ -66,46 +66,48 @@ class Directory extends Component {
               </tr>
             </thead>
             <tbody>
-              {/* if it's not sorted, map accordingly */}
-              {!this.state.sorted
-                ? this.state.employees.map((employee) => (
-                    <Employees
-                      key={employee.id.value}
-                      firstName={employee.name.first}
-                      lastName={employee.name.last}
-                      phone={employee.phone}
-                      email={employee.email}
-                      icon={employee.picture.medium}
-                      dob={employee.dob.date}
-                      address={
-                        employee.location.street.number +
-                        " " +
-                        employee.location.street.name +
-                        ", " +
-                        employee.location.city +
-                        ", " +
-                        employee.location.state +
-                        " " +
-                        employee.location.postcode
-                      }
-                    />
-                  ))
-                : // otherwise map the sorted employees
-                  this.state.empSort.map((employee) => (
-                    <Employees
-                      key={employee.id.value}
-                      firstName={employee.name.first}
-                      lastName={employee.name.last}
-                      phone={employee.phone}
-                      email={employee.email}
-                      icon={employee.picture.medium}
-                      dob={employee.dob.date}
-                      address={
-                        employee.location.street.number +
-                        employee.location.street.name
-                      }
-                    />
-                  ))}
+              {
+                // If user has not entered any search input, sort employees by UUID
+                !this.state.sorted
+                  ? this.state.employees.map((employee) => (
+                      <Employees
+                        key={employee.id.value}
+                        firstName={employee.name.first}
+                        lastName={employee.name.last}
+                        phone={employee.phone}
+                        email={employee.email}
+                        icon={employee.picture.medium}
+                        dob={employee.dob.date}
+                        address={
+                          employee.location.street.number +
+                          " " +
+                          employee.location.street.name +
+                          ", " +
+                          employee.location.city +
+                          ", " +
+                          employee.location.state +
+                          " " +
+                          employee.location.postcode
+                        }
+                      />
+                    ))
+                  : // sort users by UUID if the user has entered a search
+                    this.state.empSort.map((employee) => (
+                      <Employees
+                        key={employee.id.value}
+                        firstName={employee.name.first}
+                        lastName={employee.name.last}
+                        phone={employee.phone}
+                        email={employee.email}
+                        icon={employee.picture.medium}
+                        dob={employee.dob.date}
+                        address={
+                          employee.location.street.number +
+                          employee.location.street.name
+                        }
+                      />
+                    ))
+              }
               ;
             </tbody>
           </table>
