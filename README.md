@@ -4,6 +4,9 @@ Employee Directory created with React.  This project was bootstrapped with [Crea
 
 [Live Website](https://tomoverland.github.io/Employee-Directory/).
 
+![Screenshot of Application](https://github.com/TomOverland/Employee-Directory/blob/main/public/assets/employee-directory.JPG)
+
+
 ## Table of Contents
 
 - [Description](#description)
@@ -12,8 +15,6 @@ Employee Directory created with React.  This project was bootstrapped with [Crea
 - [Built With](#built-with)
 - [License](#license)
 - [Questions](#questions)
-
-![Screenshot of Application](https://github.com/TomOverland/Employee-Directory/blob/main/public/assets/employee-directory.JPG)
 
 
 ## Description:
