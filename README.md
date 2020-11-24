@@ -1,75 +1,83 @@
 # Employee-Directory
-Employee Directory created with React.
 
-live website: https://tomoverland.github.io/Employee-Directory/
+Employee Directory created with React.  This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Getting Started with Create React App
+[Live Website](https://tomoverland.github.io/Employee-Directory/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Description](#description)
+- [Installation](#installation)
+- [Technology Used](#technology-used)
+- [Built With](#built-with)
+- [License](#license)
+- [Questions](#questions)
 
-In the project directory, you can run:
+![Screenshot of Application](screenshot-link-needed)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Description:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This application allows a user to quickly search for an employee's contact information, and will dynamically filter out employees as the user inputs keystrokes.
 
-### `npm test`
+![Screenshot of Application](gif-demo-here)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Installation:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Step 1 - Make sure you have a code editor, Node.js and Node Package Manager installed
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The code editor I used was Visual Studio Code. It can be found [here](https://code.visualstudio.com/download).  
+Node.js and NPM download can be found [here](https://nodejs.org/en/).  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Step 2 - Clone my repository
 
-### `npm run eject`
+In your command terminal, type the following to clone this repository: "git clone https://github.com/TomOverland/Workout-Tracker.git"
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Step 3 - Move to the correct directory
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Type the following in your command line: "cd Employee-Directory"
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Step 4 - Install NPM dependencies
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+By typing "npm install" you will download all of the dependencies required for this application.
 
-## Learn More
+#### Step 5 - Start the application on your local server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Type the following script in your command line: "npm run start" and your internet browser will open a webpage on localhost:3000.  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technology used
+* Node.js
+* HTML 5
+* CSS 3
+* JavaScript
+* Axios - Used to make an API call to https://randomuser.me/ to obtain example employees
+* Bootstrap - Used to structure the design of the site
+* React
+* JSX
+* "gh-pages" NPM package - Used to deploy a React Application to github pages.
 
-### Code Splitting
+## Built With
+* VS Code - https://code.visualstudio.com/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License:
 
-### Analyzing the Bundle Size
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For more information about the license, click the link below:
 
-### Making a Progressive Web App
+- [License](https://opensource.org/licenses/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing:
 
-### Advanced Configuration
+Everyone is welcome to contribute. Create a pull request with your changes and I will review it. Currently, I only have instructions written in English. Translations to other languages would be appreciated!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Tests:
 
-### Deployment
+This application was not developed with any tests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Questions:
 
-### `npm run build` fails to minify
+For more information about the application, please reach out to me via my [GitHub Profile](https://github.com/TomOverland).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any other questions, please send me an email at: thomas.c.overland@gmail.com.
