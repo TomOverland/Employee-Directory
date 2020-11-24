@@ -13,14 +13,14 @@ Employee Directory created with React.  This project was bootstrapped with [Crea
 - [License](#license)
 - [Questions](#questions)
 
-![Screenshot of Application](screenshot-link-needed)
+![Screenshot of Application](https://github.com/TomOverland/Employee-Directory/blob/main/public/assets/employee-directory.JPG)
 
 
 ## Description:
 
 This application allows a user to quickly search for an employee's contact information, and will dynamically filter out employees as the user inputs keystrokes.
 
-![Screenshot of Application](gif-demo-here)
+![Screenshot of Application](https://github.com/TomOverland/Employee-Directory/blob/main/public/assets/Searchgif.gif)
 
 
 ## Installation:
