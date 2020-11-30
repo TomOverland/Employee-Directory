@@ -19,7 +19,7 @@ Employee Directory created with React.  This project was bootstrapped with [Crea
 
 ## Description:
 
-This application allows a user to quickly search for an employee's contact information, and will dynamically filter out employees as the user inputs keystrokes.
+This client-side application allows a user to quickly search for an employee's contact information, and will dynamically filter out employees as the user inputs keystrokes.  The employee list was populated by an API GET Request to https://randomuser.me.  This application was created with React and Bootstrap, and was based on a project prompt I received from the University of Minnesota's Full Stack Web Development Bootcamp.  I deployed this application's build folder to github using the "gh-pages" NPM package.
 
 ![Screenshot of Application](https://github.com/TomOverland/Employee-Directory/blob/main/public/assets/Searchgif.gif)
 
