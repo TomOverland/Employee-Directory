@@ -33,7 +33,7 @@ Node.js and NPM download can be found [here](https://nodejs.org/en/).
 
 #### Step 2 - Clone my repository
 
-In your command terminal, type the following to clone this repository: "git clone https://github.com/TomOverland/Workout-Tracker.git"
+In your command terminal, type the following to clone this repository: "git clone https://github.com/TomOverland/Employee-Directory.git"
 
 #### Step 3 - Move to the correct directory
 
